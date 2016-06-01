@@ -59,6 +59,8 @@ func playIdleAnimation(){
         self.startAnimating()
         
     }
+    
+   
 
     
 }

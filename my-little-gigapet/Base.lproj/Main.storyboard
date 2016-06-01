@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0SS-em-4LO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -36,8 +36,8 @@
                                     <rect key="frame" x="180" y="-127" width="240" height="137"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="X7C-o4-qxh" customClass="MonsterImg" customModule="my_little_gigapet" customModuleProvider="target">
-                                <rect key="frame" x="-17" y="170" width="549" height="392"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="X7C-o4-qxh" customClass="MonsterImg" customModule="my_little_gigapet" customModuleProvider="target">
+                                <rect key="frame" x="-16" y="169" width="549" height="392"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="392" id="8Zs-4l-pAI"/>
                                     <constraint firstAttribute="width" constant="549" id="NMe-Lb-wp7"/>
@@ -110,28 +110,59 @@
                                     </mask>
                                 </variation>
                             </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haS-Vc-BDB" userLabel="Play Again">
+                                <rect key="frame" x="365" y="354" width="194" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="eU7-p1-ryH"/>
+                                    <constraint firstAttribute="width" constant="194" id="fhQ-aa-ekS"/>
+                                    <constraint firstAttribute="height" constant="37" id="nWX-yi-S0D"/>
+                                    <constraint firstAttribute="width" constant="194" id="yJE-S7-QX7"/>
+                                </constraints>
+                                <state key="normal" image="Play-Again"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fhQ-aa-ekS"/>
+                                        <exclude reference="nWX-yi-S0D"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="fhQ-aa-ekS"/>
+                                        <include reference="nWX-yi-S0D"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="playAgainBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61A-QY-JGB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="haS-Vc-BDB" secondAttribute="trailing" constant="21" id="3aK-eE-Ak5"/>
                             <constraint firstItem="neJ-49-y0i" firstAttribute="centerY" secondItem="Wg8-Pl-ZKc" secondAttribute="centerY" id="7Dc-bB-aaV"/>
                             <constraint firstItem="X9c-7w-Kuh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BJA-74-aLW"/>
                             <constraint firstItem="X9c-7w-Kuh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EI4-eO-hrO"/>
                             <constraint firstAttribute="trailing" secondItem="nru-kz-wjP" secondAttribute="trailing" id="EbA-ja-X0C"/>
+                            <constraint firstItem="nru-kz-wjP" firstAttribute="top" secondItem="haS-Vc-BDB" secondAttribute="bottom" constant="155" id="Eqz-hg-eM6"/>
                             <constraint firstItem="xkw-Zr-17s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LI0-Yv-HRu"/>
                             <constraint firstAttribute="trailing" secondItem="X9c-7w-Kuh" secondAttribute="trailing" id="NXp-Yr-nGJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nru-kz-wjP" secondAttribute="bottom" id="PLh-rM-SFw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xkw-Zr-17s" secondAttribute="trailing" id="Pfr-2V-OMg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X9c-7w-Kuh" secondAttribute="bottom" id="QKU-Mw-4Li"/>
                             <constraint firstItem="xkw-Zr-17s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEg-hF-W84"/>
+                            <constraint firstItem="haS-Vc-BDB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W3x-gf-S9A"/>
                             <constraint firstItem="nru-kz-wjP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XwZ-Hq-5xI"/>
                             <constraint firstItem="Wg8-Pl-ZKc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZuN-vZ-hW3"/>
                             <constraint firstItem="xkw-Zr-17s" firstAttribute="top" secondItem="Wg8-Pl-ZKc" secondAttribute="bottom" constant="18" id="fEx-i0-PfG"/>
                             <constraint firstItem="Wg8-Pl-ZKc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mmk-hX-lLB"/>
+                            <constraint firstItem="nru-kz-wjP" firstAttribute="top" secondItem="haS-Vc-BDB" secondAttribute="bottom" constant="148" id="ngI-nP-jJV"/>
                             <constraint firstItem="xkw-Zr-17s" firstAttribute="top" secondItem="Wg8-Pl-ZKc" secondAttribute="bottom" constant="15" id="rQc-GC-ZlD"/>
+                            <constraint firstItem="haS-Vc-BDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="rSq-dc-SSK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X7C-o4-qxh" secondAttribute="bottom" constant="38" id="rUb-v9-tzr"/>
                             <constraint firstItem="neJ-49-y0i" firstAttribute="centerX" secondItem="Wg8-Pl-ZKc" secondAttribute="centerX" id="u5U-Ju-gBW"/>
                             <constraint firstItem="xkw-Zr-17s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="x9O-OW-zNM"/>
                             <constraint firstItem="X7C-o4-qxh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-37" id="yVW-6j-YfA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="haS-Vc-BDB" secondAttribute="trailing" constant="83" id="zPG-MZ-2aX"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -139,6 +170,10 @@
                                 <exclude reference="Pfr-2V-OMg"/>
                                 <exclude reference="rQc-GC-ZlD"/>
                                 <exclude reference="x9O-OW-zNM"/>
+                                <exclude reference="W3x-gf-S9A"/>
+                                <exclude reference="rSq-dc-SSK"/>
+                                <exclude reference="zPG-MZ-2aX"/>
+                                <exclude reference="Eqz-hg-eM6"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -146,6 +181,14 @@
                                 <include reference="Pfr-2V-OMg"/>
                                 <exclude reference="SEg-hF-W84"/>
                                 <include reference="x9O-OW-zNM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="W3x-gf-S9A"/>
+                                <include reference="rSq-dc-SSK"/>
+                                <include reference="zPG-MZ-2aX"/>
+                                <include reference="Eqz-hg-eM6"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -161,11 +204,12 @@
                         <outlet property="penalty1img" destination="R1M-An-ora" id="r7Q-dl-Aqj"/>
                         <outlet property="penalty2img" destination="BFM-mM-d8l" id="c2D-QQ-TsM"/>
                         <outlet property="penalty3img" destination="VBl-P5-3kR" id="BOr-MB-fiV"/>
+                        <outlet property="playAgainOutlet" destination="haS-Vc-BDB" id="DuE-xc-74l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1154" y="533"/>
+            <point key="canvasLocation" x="802" y="159"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BIm-9G-36A">
@@ -183,10 +227,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M06-hY-0y1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="402" y="533"/>
+            <point key="canvasLocation" x="175" y="159"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Play-Again" width="239" height="47"/>
         <image name="bg" width="768" height="1024"/>
         <image name="food" width="95" height="98"/>
         <image name="ground" width="1444" height="151"/>

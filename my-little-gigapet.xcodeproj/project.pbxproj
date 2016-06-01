@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EC68D601CFD4ECB00AA3CE0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC68D5F1CFD4ECB00AA3CE0 /* Media.xcassets */; };
 		7EF3690A1CFA92BE001C4F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF369091CFA92BE001C4F91 /* AppDelegate.swift */; };
 		7EF3690C1CFA92BE001C4F91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3690B1CFA92BE001C4F91 /* ViewController.swift */; };
 		7EF3690F1CFA92BE001C4F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF3690D1CFA92BE001C4F91 /* Main.storyboard */; };
-		7EF369111CFA92BE001C4F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EF369101CFA92BE001C4F91 /* Assets.xcassets */; };
 		7EF369141CFA92BE001C4F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF369121CFA92BE001C4F91 /* LaunchScreen.storyboard */; };
 		7EF3691C1CFAAAD5001C4F91 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3691B1CFAAAD5001C4F91 /* DragImg.swift */; };
 		7EF3691E1CFABF4C001C4F91 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3691D1CFABF4B001C4F91 /* MonsterImg.swift */; };
@@ -22,11 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7EC68D5F1CFD4ECB00AA3CE0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		7EF369061CFA92BE001C4F91 /* my-little-gigapet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-little-gigapet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF369091CFA92BE001C4F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EF3690B1CFA92BE001C4F91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EF3690E1CFA92BE001C4F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7EF369101CFA92BE001C4F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EF369131CFA92BE001C4F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EF369151CFA92BE001C4F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EF3691B1CFAAAD5001C4F91 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
@@ -78,9 +78,9 @@
 				7EF3691D1CFABF4B001C4F91 /* MonsterImg.swift */,
 				7EF3691B1CFAAAD5001C4F91 /* DragImg.swift */,
 				7EF3690D1CFA92BE001C4F91 /* Main.storyboard */,
-				7EF369101CFA92BE001C4F91 /* Assets.xcassets */,
 				7EF369121CFA92BE001C4F91 /* LaunchScreen.storyboard */,
 				7EF369151CFA92BE001C4F91 /* Info.plist */,
+				7EC68D5F1CFD4ECB00AA3CE0 /* Media.xcassets */,
 			);
 			path = "my-little-gigapet";
 			sourceTree = "<group>";
@@ -146,11 +146,11 @@
 			files = (
 				7EF369281CFCB556001C4F91 /* skull.wav in Resources */,
 				7EF369251CFCB556001C4F91 /* bite.wav in Resources */,
+				7EC68D601CFD4ECB00AA3CE0 /* Media.xcassets in Resources */,
 				7EF369261CFCB556001C4F91 /* death.wav in Resources */,
 				7EF369271CFCB556001C4F91 /* heart.wav in Resources */,
 				7EF369141CFA92BE001C4F91 /* LaunchScreen.storyboard in Resources */,
 				7EF369241CFCB556001C4F91 /* cave-music.mp3 in Resources */,
-				7EF369111CFA92BE001C4F91 /* Assets.xcassets in Resources */,
 				7EF3690F1CFA92BE001C4F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +321,7 @@
 				7EF3691A1CFA92BE001C4F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var monsterImg: MonsterImg!
     @IBOutlet weak var heart: DragImg!
     @IBOutlet weak var foodImg: DragImg!
+   
+    @IBOutlet weak var playAgainOutlet: UIButton!
     
     
     @IBOutlet weak var penalty1img: UIImageView!
@@ -34,7 +36,12 @@ class ViewController: UIViewController {
     var sfxDeath: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
     
-    
+     @IBAction func playAgainBtn(sender: AnyObject) {
+        reborn()
+        startTimer()
+        musicPlayer.play()
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +77,8 @@ class ViewController: UIViewController {
             sfxHeart.prepareToPlay()
             sfxDeath.prepareToPlay()
             sfxSkull.prepareToPlay()
+            
+            
             
         } catch let err as NSError {
             print(err.debugDescription)
@@ -163,8 +172,21 @@ class ViewController: UIViewController {
     func gameOver(){
           timer.invalidate()
           monsterImg.playDeathAnimation()
-        sfxDeath.play()
+          sfxDeath.play()
+          playAgainOutlet.hidden = false
     
+    }
+    
+    func reborn(){
+        
+        
+        monsterImg.playIdleAnimation()
+        playAgainOutlet.hidden = true
+        currentPenalties = 0
+        penalty1img.alpha = DIM_ALPHA
+        penalty2img.alpha = DIM_ALPHA
+        penalty3img.alpha = DIM_ALPHA
+        
     }
       
   
